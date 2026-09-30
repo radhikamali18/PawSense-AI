@@ -1,0 +1,51 @@
+limping,low_activity,paw_licking,scratching,eating_less,unusual_sounds,concern
+0,0,0,0,0,0,Normal
+0,0,0,0,0,1,Mild Concern
+0,0,0,1,0,0,Mild Concern
+0,0,1,0,0,0,Mild Concern
+0,1,0,0,0,0,Mild Concern
+0,0,0,0,1,0,Mild Concern
+0,1,0,0,0,1,Mild Concern
+0,0,1,0,0,1,Mild Concern
+0,0,0,1,0,1,Mild Concern
+1,0,0,0,0,0,Moderate Concern
+1,1,0,0,0,0,Moderate Concern
+1,0,1,0,0,0,Moderate Concern
+0,1,1,0,0,0,Moderate Concern
+1,0,0,1,0,0,Moderate Concern
+0,1,0,0,1,0,Moderate Concern
+0,0,1,1,0,0,Moderate Concern
+1,0,0,0,1,0,Moderate Concern
+1,0,0,0,0,1,Moderate Concern
+0,1,0,1,0,0,Moderate Concern
+0,0,1,0,1,0,Moderate Concern
+1,1,1,0,0,0,High Concern
+1,1,0,1,0,0,High Concern
+1,0,1,1,0,0,High Concern
+1,1,0,0,1,0,High Concern
+1,0,1,0,1,0,High Concern
+0,1,1,1,0,0,High Concern
+1,1,1,1,0,0,High Concern
+1,1,0,1,1,0,High Concern
+1,0,1,1,1,0,High Concern
+1,1,1,0,1,1,High Concern
+1,1,0,1,0,1,High Concern
+0,1,1,1,1,0,High Concern
+1,1,1,1,1,0,High Concern
+1,1,1,0,1,1,High Concern
+1,0,1,1,0,1,High Concern
+0,1,1,1,1,1,High Concern
+1,1,0,0,1,1,High Concern
+1,0,0,1,1,1,High Concern
+0,1,0,1,1,1,High Concern
+1,1,1,1,1,1,High Concern
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal
+0,0,0,0,0,0,Normal

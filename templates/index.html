@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawSense AI | Dog Behaviour Intelligence</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🐾
+            </div>
+
+            <div>
+                <h2>PawSense AI</h2>
+                <span>Dog Behaviour Intelligence</span>
+            </div>
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#analyzer">Behaviour Check</a>
+
+            <a href="#history">History</a>
+
+            <a href="#trend">Trend</a>
+
+            <a href="#about">About AI</a>
+
+            <a href="#safety">Safety</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                🤖 AI-Powered Dog Behaviour Analysis
+            </span>
+
+            <h1>
+                Understand Your Dog's
+                <span>Behaviour Better</span>
+            </h1>
+
+            <p>
+                PawSense AI analyses observed behaviour patterns
+                and provides simple guidance for dog owners.
+            </p>
+
+            <button class="hero-button"
+                onclick="document.getElementById('analyzer').scrollIntoView({behavior:'smooth'})">
+
+                🐾 Start Behaviour Check
+
+            </button>
+
+        </div>
+
+
+        <div class="hero-dog">
+
+            <div class="dog-circle">
+
+                🐶
+
+            </div>
+
+
+            <div class="floating-card card-one">
+
+                <span>🤖</span>
+
+                <div>
+                    <strong>AI Analysis</strong>
+                    <small>Behaviour patterns</small>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-two">
+
+                <span>💚</span>
+
+                <div>
+                    <strong>Simple Guidance</strong>
+                    <small>For dog owners</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ANALYZER ================= -->
+
+    <section class="analyzer-section" id="analyzer">
+
+        <div class="section-heading">
+
+            <span>🐾 BEHAVIOUR CHECK</span>
+
+            <h2>
+                What are you observing?
+            </h2>
+
+            <p>
+                Select the behaviour signs you have noticed in your dog.
+            </p>
+
+        </div>
+
+
+        <div class="behaviour-grid">
+
+
+            <!-- CARD 1 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="limping">
+
+                <div class="card-icon">
+                    🐾
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Limping</h3>
+
+                    <p>
+                        Difficulty while walking
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+
+
+            <!-- CARD 2 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="low_activity">
+
+                <div class="card-icon">
+                    💤
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Low Activity</h3>
+
+                    <p>
+                        Less active than usual
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+
+
+            <!-- CARD 3 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="paw_licking">
+
+                <div class="card-icon">
+                    👅
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Paw Licking</h3>
+
+                    <p>
+                        Frequently licking paws
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+
+
+            <!-- CARD 4 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="scratching">
+
+                <div class="card-icon">
+                    🐕
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Scratching</h3>
+
+                    <p>
+                        Frequent scratching
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+
+
+            <!-- CARD 5 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="eating_less">
+
+                <div class="card-icon">
+                    🍽️
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Eating Less</h3>
+
+                    <p>
+                        Reduced food intake
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+
+
+            <!-- CARD 6 -->
+
+            <label class="behaviour-card">
+
+                <input type="checkbox" data-feature="unusual_sounds">
+
+                <div class="card-icon">
+                    🔊
+                </div>
+
+                <div class="card-text">
+
+                    <h3>Unusual Sounds</h3>
+
+                    <p>
+                        More sounds than usual
+                    </p>
+
+                </div>
+
+                <div class="check-mark">
+                    ✓
+                </div>
+
+            </label>
+
+        </div>
+
+
+
+        <div class="analyze-wrapper">
+
+            <button class="analyze-btn">
+
+                🤖 Analyse My Dog's Behaviour
+
+            </button>
+            <button class="reset-btn" type="button" onclick="resetSelection()">
+
+                ↺ Reset Selection
+
+            </button>
+
+            <p>
+                Select one or more signs before analysing.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BEHAVIOUR HISTORY ================= -->
+
+    <section class="history-section" id="history">
+
+        <div class="section-heading">
+
+            <span>📋 BEHAVIOUR HISTORY</span>
+
+            <h2>
+                Previous Behaviour Checks
+            </h2>
+
+            <p>
+                Your previous PawSense AI analysis results
+                are stored in this browser.
+            </p>
+
+        </div>
+
+
+        <div class="history-container">
+
+            <div id="history-list">
+
+                <p class="empty-history">
+                    No previous behaviour checks yet.
+                </p>
+
+            </div>
+
+
+            <button class="clear-history-btn" onclick="clearHistory()">
+
+                🗑️ Clear History
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BEHAVIOUR TREND ================= -->
+
+    <section class="trend-section" id="trend">
+
+        <div class="section-heading">
+
+            <span>📈 BEHAVIOUR TREND</span>
+
+            <h2>
+                Your Dog's Behaviour Trend
+            </h2>
+
+            <p>
+                See how your dog's behaviour checks have changed over time.
+            </p>
+
+        </div>
+
+
+        <div class="trend-container">
+
+            <div id="trend-list">
+
+                <p class="empty-trend">
+                    Analyse your dog's behaviour to see the trend.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT AI ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <span class="section-tag">
+                ABOUT PAWSENSE AI
+            </span>
+
+            <h2>
+                How does the AI work?
+            </h2>
+
+            <p>
+                PawSense AI uses a Machine Learning Decision Tree
+                model to analyse selected dog behaviour patterns.
+            </p>
+
+        </div>
+
+
+
+        <div class="ai-steps">
+
+
+            <div class="ai-step">
+
+                <span>01</span>
+
+                <h3>Observe</h3>
+
+                <p>
+                    Owner observes the dog's behaviour.
+                </p>
+
+            </div>
+
+
+            <div class="ai-step">
+
+                <span>02</span>
+
+                <h3>Select</h3>
+
+                <p>
+                    Relevant behaviour signs are selected.
+                </p>
+
+            </div>
+
+
+            <div class="ai-step">
+
+                <span>03</span>
+
+                <h3>Analyse</h3>
+
+                <p>
+                    Decision Tree model processes the inputs.
+                </p>
+
+            </div>
+
+
+            <div class="ai-step">
+
+                <span>04</span>
+
+                <h3>Guide</h3>
+
+                <p>
+                    PawSense provides simple behavioural guidance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SAFETY ================= -->
+
+    <section class="safety-section" id="safety">
+
+        <div class="safety-icon">
+            ⚠️
+        </div>
+
+        <div>
+
+            <h2>
+                Important Safety Note
+            </h2>
+
+            <p>
+                PawSense AI provides behavioural guidance based on
+                selected observations. It does not diagnose diseases
+                and does not replace professional veterinary advice.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            🐾 <strong>PawSense AI</strong>
+
+        </div>
+
+        <p>
+            Dog Behaviour Intelligence System
+        </p>
+
+        <p class="copyright">
+            © 2026 PawSense AI. Educational AI Project.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        // ==========================================
+        // ANALYSE BUTTON
+        // ==========================================
+
+        const analyzeButton =
+            document.querySelector(".analyze-btn");
+
+
+        analyzeButton.addEventListener("click", async function () {
+
+
+            const data = {
+
+                limping:
+                    document.querySelector(
+                        "[data-feature='limping']"
+                    ).checked ? 1 : 0,
+
+                low_activity:
+                    document.querySelector(
+                        "[data-feature='low_activity']"
+                    ).checked ? 1 : 0,
+
+                paw_licking:
+                    document.querySelector(
+                        "[data-feature='paw_licking']"
+                    ).checked ? 1 : 0,
+
+                scratching:
+                    document.querySelector(
+                        "[data-feature='scratching']"
+                    ).checked ? 1 : 0,
+
+                eating_less:
+                    document.querySelector(
+                        "[data-feature='eating_less']"
+                    ).checked ? 1 : 0,
+
+                unusual_sounds:
+                    document.querySelector(
+                        "[data-feature='unusual_sounds']"
+                    ).checked ? 1 : 0
+
+            };
+
+
+            const selectedCount =
+                Object.values(data)
+                    .filter(value => value === 1)
+                    .length;
+
+
+            if (selectedCount === 0) {
+
+                alert(
+                    "Please select at least one behaviour sign."
+                );
+
+                return;
+
+            }
+
+
+            try {
+
+
+                const response =
+                    await fetch("/analyze", {
+
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body:
+                            JSON.stringify(data)
+
+                    });
+
+
+                const result =
+                    await response.json();
+
+
+                showResult(result);
+
+            }
+
+
+            catch (error) {
+
+                console.error(error);
+
+                alert(
+                    "Something went wrong. Please try again."
+                );
+
+            }
+
+        });
+
+
+
+        // ==========================================
+        // SHOW RESULT
+        // ==========================================
+
+        function showResult(result) {
+
+
+            // ==========================================
+            // SELECTED SIGNS
+            // ==========================================
+
+            let signsHTML = "";
+
+
+            if (
+                !result.signs ||
+                result.signs.length === 0
+            ) {
+
+                signsHTML = `
+
+                    <p class="no-signs">
+
+                        No unusual signs selected.
+
+                    </p>
+
+                `;
+
+            }
+
+
+            else {
+
+                result.signs.forEach(function (sign) {
+
+                    signsHTML += `
+
+                        <li>
+                            ✓ ${sign}
+                        </li>
+
+                    `;
+
+                });
+
+            }
+
+
+
+            // ==========================================
+            // ACTION LIST
+            // ==========================================
+
+            let actionList = "";
+
+
+            result.action.forEach(function (item) {
+
+                actionList += `
+
+                    <li>
+                        ✓ ${item}
+                    </li>
+
+                `;
+
+            });
+
+
+
+            // ==========================================
+            // AVOID LIST
+            // ==========================================
+
+            let avoidList = "";
+
+
+            result.avoid.forEach(function (item) {
+
+                avoidList += `
+
+                    <li>
+                        ✕ ${item}
+                    </li>
+
+                `;
+
+            });
+
+
+
+            // ==========================================
+            // FEATURE IMPORTANCE
+            // ==========================================
+
+            let importanceHTML = "";
+
+
+            if (
+                result.feature_importance &&
+                result.feature_importance.length > 0
+            ) {
+
+
+                result.feature_importance.forEach(function (item) {
+
+
+                    importanceHTML += `
+
+                        <div class="importance-row">
+
+
+                            <div class="importance-top">
+
+                                <span>
+                                    ${item.name}
+                                </span>
+
+                                <strong>
+                                    ${item.importance}%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="importance-bar">
+
+                                <div
+                                    class="importance-fill"
+                                    style="width: ${item.importance}%">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    `;
+
+                });
+
+            }
+
+
+
+            // ==========================================
+            // RESULT HTML
+            // ==========================================
+
+            const resultHTML = `
+
+                <div class="ai-result">
+
+
+                    <div class="result-header">
+
+                        🤖 PawSense AI Analysis
+
+                    </div>
+
+
+
+                    <div class="result-content-box">
+
+
+                        <span class="result-label">
+                            AI RESULT
+                        </span>
+
+
+
+                        <h2>
+                            ${result.title}
+                        </h2>
+
+
+
+                        <div class="concern-badge">
+
+                            ${result.prediction}
+
+                        </div>
+
+
+
+                        <p class="result-message">
+
+                            ${result.message}
+
+                        </p>
+
+
+
+                        <!-- AI EXPLANATION -->
+
+                        <div class="ai-explanation">
+
+
+                            <h3>
+                                🤖 What did the AI observe?
+                            </h3>
+
+
+                            <p>
+
+                                ${result.ai_explanation ||
+                "The AI model analysed the selected behaviour inputs."
+                }
+
+                            </p>
+
+
+                            <ul>
+
+                                ${signsHTML}
+
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <!-- FEATURE IMPORTANCE -->
+
+                        <div class="feature-importance">
+
+
+                            <h3>
+                                📊 Important Behaviour Factors
+                            </h3>
+
+
+                            <p>
+
+                                Ye Decision Tree model ke overall
+                                feature importance ko show karta hai.
+
+                            </p>
+
+
+                            ${importanceHTML}
+
+
+                        </div>
+
+
+
+                        <!-- POSSIBLE MEANING -->
+
+                        <div class="possible-reason">
+
+
+                            <h3>
+                                🔎 What could this mean?
+                            </h3>
+
+
+                            <p>
+
+                                ${result.possible_reason}
+
+                            </p>
+
+
+                        </div>
+
+
+
+                        <!-- ACTION -->
+
+                        <div class="result-advice">
+
+
+                            <h3>
+                                💚 What you can do
+                            </h3>
+
+
+                            <ul>
+
+                                ${actionList}
+
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <!-- AVOID -->
+
+                        <div class="result-avoid">
+
+
+                            <h3>
+                                ⚠️ What to avoid
+                            </h3>
+
+
+                            <ul>
+
+                                ${avoidList}
+
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <!-- VET -->
+
+                        <div class="when-vet">
+
+
+                            <h3>
+                                🩺 When to contact a vet
+                            </h3>
+
+
+                            <p>
+
+                                ${result.when_vet}
+
+                            </p>
+
+
+                        </div>
+
+
+
+                        <!-- DISCLAIMER -->
+
+                        <div class="disclaimer">
+
+                            ⚠️ PawSense AI provides behavioural
+                            guidance only. It is not a veterinary
+                            diagnosis.
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            `;
+
+
+
+            // ==========================================
+            // REMOVE OLD RESULT
+            // ==========================================
+
+            const existingResult =
+                document.querySelector(".ai-result");
+
+
+            if (existingResult) {
+
+                existingResult.remove();
+
+            }
+
+
+
+            // ==========================================
+            // SHOW RESULT
+            // ==========================================
+
+            document
+                .querySelector(".analyzer-section")
+                .insertAdjacentHTML(
+                    "afterend",
+                    resultHTML
+                );
+
+
+
+            document
+                .querySelector(".ai-result")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+
+
+            // ==========================================
+            // SAVE HISTORY
+            // ==========================================
+
+            saveHistory(result);
+
+            loadHistory();
+
+            loadTrend();
+
+        }
+
+        // ==========================================
+        // LOAD BEHAVIOUR TREND
+        // ==========================================
+
+        loadTrend();
+
+
+        // ==========================================
+        // SAVE BEHAVIOUR HISTORY
+        // ==========================================
+
+        function saveHistory(result) {
+
+
+            const history =
+                JSON.parse(
+                    localStorage.getItem(
+                        "pawSenseHistory"
+                    )
+                ) || [];
+
+
+
+            const historyItem = {
+
+                date:
+                    new Date().toLocaleString(),
+
+                prediction:
+                    result.prediction,
+
+                title:
+                    result.title,
+
+                signs:
+                    result.signs || []
+
+            };
+
+
+
+            history.unshift(historyItem);
+
+
+
+            // Latest 10 records only
+
+            const limitedHistory =
+                history.slice(0, 10);
+
+
+
+            localStorage.setItem(
+
+                "pawSenseHistory",
+
+                JSON.stringify(
+                    limitedHistory
+                )
+
+            );
+
+        }
+
+
+
+        // ==========================================
+        // LOAD BEHAVIOUR HISTORY
+        // ==========================================
+
+        function loadHistory() {
+
+
+            const history =
+                JSON.parse(
+                    localStorage.getItem(
+                        "pawSenseHistory"
+                    )
+                ) || [];
+
+
+
+            const historyList =
+                document.getElementById(
+                    "history-list"
+                );
+
+
+
+            if (history.length === 0) {
+
+                historyList.innerHTML = `
+
+                    <p class="empty-history">
+
+                        No previous behaviour checks yet.
+
+                    </p>
+
+                `;
+
+                return;
+
+            }
+
+
+
+            let historyHTML = "";
+
+
+
+            history.forEach(function (item) {
+
+
+                let signsHTML = "";
+
+
+
+                if (
+                    item.signs &&
+                    item.signs.length > 0
+                ) {
+
+
+                    item.signs.forEach(function (sign) {
+
+
+                        signsHTML += `
+
+                            <span class="history-sign">
+
+                                ${sign}
+
+                            </span>
+
+                        `;
+
+                    });
+
+                }
+
+
+
+                historyHTML += `
+
+                    <div class="history-card">
+
+
+                        <div class="history-top">
+
+
+                            <div>
+
+                                <span class="history-date">
+
+                                    ${item.date}
+
+                                </span>
+
+
+                                <h3>
+
+                                    ${item.title}
+
+                                </h3>
+
+                            </div>
+
+
+
+                            <span class="history-badge">
+
+                                ${item.prediction}
+
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="history-signs">
+
+                            ${signsHTML}
+
+                        </div>
+
+
+                    </div>
+
+                `;
+
+            });
+
+
+
+            historyList.innerHTML =
+                historyHTML;
+
+        }
+
+
+
+        // ==========================================
+        // CLEAR HISTORY
+        // ==========================================
+
+        function clearHistory() {
+            // ==========================================
+            // RESET BEHAVIOUR SELECTION
+            // ==========================================
+
+            function resetSelection() {
+
+                const checkboxes = document.querySelectorAll(
+                    'input[type="checkbox"]'
+                );
+
+                checkboxes.forEach(function (checkbox) {
+                    checkbox.checked = false;
+                });
+
+            }
+
+
+            localStorage.removeItem(
+                "pawSenseHistory"
+            );
+
+
+            loadHistory();
+
+        }
+
+        // ==========================================
+        // LOAD BEHAVIOUR TREND
+        // ==========================================
+
+        function loadTrend() {
+
+            const history =
+                JSON.parse(
+                    localStorage.getItem("pawSenseHistory")
+                ) || [];
+
+
+            const trendList =
+                document.getElementById("trend-list");
+
+
+            if (history.length === 0) {
+
+                trendList.innerHTML = `
+
+            <p class="empty-trend">
+
+                Analyse your dog's behaviour to see the trend.
+
+            </p>
+
+        `;
+
+                return;
+
+            }
+
+
+            let trendHTML = "";
+
+
+            history.forEach(function (item, index) {
+
+                let width = 25;
+
+
+                if (item.prediction === "Normal") {
+
+                    width = 25;
+
+                }
+
+                else if (item.prediction === "Mild Concern") {
+
+                    width = 50;
+
+                }
+
+                else if (item.prediction === "Moderate Concern") {
+
+                    width = 75;
+
+                }
+
+                else if (item.prediction === "High Concern") {
+
+                    width = 100;
+
+                }
+
+
+                trendHTML += `
+
+            <div class="trend-row">
+
+                <div class="trend-info">
+
+                    <span>
+                        Check ${history.length - index}
+                    </span>
+
+                    <strong>
+                        ${item.prediction}
+                    </strong>
+
+                </div>
+
+
+                <div class="trend-bar">
+
+                    <div
+                        class="trend-fill"
+                        style="width: ${width}%">
+                    </div>
+
+                </div>
+
+
+                <small>
+                    ${item.date}
+                </small>
+
+            </div>
+
+        `;
+
+            });
+
+
+            trendList.innerHTML = trendHTML;
+
+        }
+
+
+        // ==========================================
+        // LOAD HISTORY WHEN PAGE OPENS
+        // ==========================================
+
+        loadHistory();
+
+
+    </script>
+
+</body>
+
+</html>
