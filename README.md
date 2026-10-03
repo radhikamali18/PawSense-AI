@@ -92,6 +92,8 @@ Behaviour trend
 
 The reported accuracy is based on a small synthetic educational dataset and should not be considered veterinary accuracy.
 
+open in browser 
+https://pawsense-ai.vercel.app/
 
 👩‍💻 Project Author
 
